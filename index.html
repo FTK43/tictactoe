@@ -1,9 +1,51 @@
 <html>
 	<head>
-		<script src="main.js"></script>
+		<link  href="style.css" rel="stylesheet" type="text/css"/>
 	</head>
 
-<body>
-</body>
+	<body>
+		
+		<div class="main">
+			<div class="player">
+		
+				<label for="name">Player One Name (up to 10 characters):</label>
 
+				<input type="text" id="name1" name="name" required maxlength="10" size="10">
+				<button class="name" id="player1">Save Name</button>
+				
+				<span class="score" id="score1">
+					Score: 0
+				</span>
+			</div>
+			<div class="gameboard">
+				<!--to put in a grid of 9 buttons-->
+				<button class="cell disabled" id="0"> </button>
+				<button class="cell disabled" id="1"> </button>
+				<button class="cell disabled" id="2"> </button>
+				<button class="cell disabled" id="3"> </button>
+				<button class="cell disabled" id="4"> </button>
+				<button class="cell disabled" id="5"> </button>
+				<button class="cell disabled" id="6"> </button>
+				<button class="cell disabled" id="7"> </button>
+				<button class="cell disabled" id="8"> </button>
+			</div>
+			<div class="player">
+				<label for="name">Player Two Name (up to 10 characters):</label>
+
+				<input type="text" id="name2" name="name" required maxlength="10" size="10">
+				<button class="name" id="player2">Save Name</button>
+				
+				<span class="score" id="score2">
+					Score: 0
+				</span>
+			</div>
+		</div>
+
+		<footer>
+			<button id="restart">RESTART THE GAME!</button>
+		</footer>
+
+	</body>
+
+	<script src="main.js"></script>
 </html>
